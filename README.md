@@ -66,30 +66,38 @@ sister(X, Y) :- female(X), parent(P, X), parent(P, Y), X \= Y.
 brother(X, Y) :- male(X), parent(P, X), parent(P, Y), X \= Y.
 
 
+
 the queries: 
 
 ?- parent(mufreh, reema).
 true.
 
 ?- parent(alhanouf, nawaf).
+
 true.
 
 ?- father(mufreh, rose).
+
 true.
 
 ?- mother(alhanouf, hadeel).
+
 true.
 
 ?- sister(reema, norah).
+
 true.
 
 ?- sister(rose, hadeel).
+
 true.
 
 ?- brother(nawaf, mohammed).
+
 true.
 
 ?- brother(fahad, reema).
+
 false.
 
 
